@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#E6FF9800"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/animationtxtt"
+        android:layout_width="268dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="ANIMATIONS"
+        android:textColor="#423A3A"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <Button
+        android:id="@+id/blinkbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gradient"
+        android:onClick="demo1"
+        android:text="BLINK"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/rotatebtn"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructiontxt" />
+
+    <Button
+        android:id="@+id/rotatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gradient1"
+        android:onClick="demo2"
+        android:textColor="@color/white"
+
+        android:text="ROTATE"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/instructiontxt"
+        app:layout_constraintStart_toStartOf="@+id/instructiontxt"
+        app:layout_constraintTop_toBottomOf="@+id/instructiontxt" />
+
+    <Button
+        android:id="@+id/fadebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/gradient2"
+        android:onClick="demo3"
+        android:textColor="@color/white"
+        android:text="FADE IN"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toEndOf="@+id/rotatebtn"
+        app:layout_constraintTop_toBottomOf="@+id/instructiontxt" />
+
+    <Button
+        android:id="@+id/moveupbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gradient2"
+        android:onClick="demo4"
+        android:textColor="@color/white"
+
+        android:text="MOVE UP"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blinkbtn" />
+
+    <Button
+        android:id="@+id/slidebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gradient1"
+        android:textColor="@color/white"
+
+        android:onClick="demo5"
+        android:text="SLIDE"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/zoominbtn"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/moveupbtn"
+        app:layout_constraintTop_toBottomOf="@+id/rotatebtn" />
+
+    <Button
+        android:id="@+id/zoominbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gradient"
+        android:onClick="demo6"
+        android:text="ZOOM IN"
+        android:textColor="@color/white"
+
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toEndOf="@+id/moveupbtn"
+        app:layout_constraintTop_toBottomOf="@+id/fadebtn" />
+
+    <Button
+        android:id="@+id/zoomoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="152dp"
+        android:background="@drawable/gradient"
+        android:onClick="demo7"
+        android:textColor="@color/white"
+
+        android:text="ZOOM OUT"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/movedownbtn"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moveupbtn" />
+
+    <Button
+        android:id="@+id/fadeoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gradient1"
+        android:onClick="demo8"
+        android:text="FADE OUT"
+        android:textColor="@color/white"
+
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/movedownbtn"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/zoomoutbtn"
+        app:layout_constraintTop_toBottomOf="@+id/slidebtn" />
+
+    <Button
+        android:id="@+id/movedownbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gradient2"
+        android:onClick="demo9"
+        android:text="MOVE DOWN"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zoominbtn" />
+
+    <TextView
+        android:id="@+id/Animatedtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:text="ASIM"
+        android:textColor="#E2FDFDFD"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/instructiontxt"
+        app:layout_constraintEnd_toEndOf="@+id/animationtxtt"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/animationtxtt"
+        app:layout_constraintTop_toBottomOf="@+id/animationtxtt"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/instructiontxt"
+        android:layout_width="390dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="257dp"
+        android:layout_marginBottom="344dp"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:text="Click On Buttons for Animation"
+        android:textColor="#E1191B1B"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Animatedtxt"
+        app:layout_constraintStart_toStartOf="@+id/Animatedtxt"
+        app:layout_constraintTop_toTopOf="@+id/animationtxtt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
